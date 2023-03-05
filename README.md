@@ -1,2 +1,3 @@
 # VBS
-VBS
+VBS   
+`wscript.exe`
