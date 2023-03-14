@@ -1,0 +1,11 @@
+' List the COM+ Properties of an OU
+
+
+On Error Resume Next
+
+Set objContainer = GetObject _
+    ("LDAP://ou=Sales,dc=NA,dc=fabrikam,dc=com")
+ 
+strMsCOMUserPartitionSetLink = objContainer.Get("msCOM-UserPartitionSetLink")
+WScript.Echo "ms-COMUserPartitionSetLink: " & strMsCOMUserPartitionSetLink
+
