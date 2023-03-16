@@ -1,0 +1,10 @@
+' Add an Additional Home Phone Number to a User Account
+
+
+Const ADS_PROPERTY_APPEND = 3 
+ 
+Set objUser = GetObject _
+   ("LDAP://cn=MyerKen,ou=Management,dc=NA,dc=fabrikam,dc=com") 
+
+objUser.PutEx ADS_PROPERTY_APPEND, "otherHomePhone", Array("(425) 555-0116")
+objUser.SetInfo
