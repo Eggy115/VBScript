@@ -1,4 +1,4 @@
-# VBS
+# VBScript
 
 This repository contains various examples of VBScript files, showcasing different functionalities of VBScript.
 
